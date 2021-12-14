@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__inner {
+  width: 300px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container__inner .box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+.container__inner button {
+  font-size: 30px;
+  width: 100px;
+}
+.container__inner .first {
+  background-color: #7cf896;
+  color: #000000;
+  transition: 0.3s linear all;
+}
+.container__inner .first:hover {
+  cursor: pointer;
+  color: #7cf896;
+  background-color: #000000;
+}
+.container__inner .second {
+  background-color: #444242;
+  color: #7cf896;
+  transition: 0.3s linear all;
+}
+.container__inner .second:hover {
+  cursor: pointer;
+  background-color: #7cf896;
+  color: #444242;
+}
+.container__inner .third {
+  background-color: #ffc400;
+  color: #59a7bb;
+  transition: 0.3s linear all;
+}
+.container__inner .third:hover {
+  cursor: pointer;
+  background-color: #59a7bb;
+  color: #ffc400;
+}
+.container__inner .fourth {
+  background-color: #59a7bb;
+  color: #ffc400;
+  transition: 0.3s linear all;
+}
+.container__inner .fourth:hover {
+  cursor: pointer;
+  background-color: #ffc400;
+  color: #59a7bb;
+}
+
+/*# sourceMappingURL=style.css.map */
