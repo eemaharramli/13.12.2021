@@ -38,27 +38,31 @@ function createDiv(className) {
     return div
 }
 
+function createLi(item) {
+    debugger;
+    const li = document.createElement('li')
+
+    const a = document.createElement('a')
+    a.setAttribute('href', '#')
+    a.textContent = item;
+    li.appendChild(a);
+
+    return li;
+}
+
 /*
     Function for creating nav
 */
 
 function createNav(){
+    const menuItems = ['Main', 'About', 'Portfolio', 'Contact us']
     const nav = document.createElement('nav')
-    for (let index = 1; index <= 4; index++) {
-        nav.appendChild(createLi())
+    for(let item of menuItems){
+        var li = createLi(item);
+        nav.appendChild(li)
     }
-    return nav
-}
 
-/*
-    Function for creating li
-*/
-
-function createLi() {
-    const li = document.createElement('li')
-    li.appendChild(createLink())
-
-    return li
+    return nav;
 }
 
 /*
@@ -72,10 +76,12 @@ function createLink() {
     a.setAttribute('href', '#')
 
     for(let item of menuItems){
+        debugger;
+        console.log('item', item);
         a.textContent = item
     }
 
-    return a
+    return a;
 }
 
 /*
@@ -85,7 +91,7 @@ function createLink() {
 function createSpan() {
     const span = document.createElement('span')
 
-    return span
+    return span;
 }
 
 /*
